@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 function ProcedureBox(props) {
-	const lab = props.laboratory;
-	const labProcList = lab[0].lists;
-
-	const labProcItem = labProcList.map((proc) => (
+	
+	const {title:nameProcGroup, lists:procedureList} = props.procGroup
+	
+	
+	const ProcItem = procedureList.map((proc) => (
 		<li className="my-4" key={proc.idProc}>
 			<label className="mr-10 text-3xl" htmlFor={proc.name}>
 				{proc.name}
@@ -24,8 +25,8 @@ function ProcedureBox(props) {
 
 	return (
 		<fieldset className="border-2 border-black space-y-3">
-			<legend className="text-2xl">{lab[0].title}</legend>
-			<ul>{labProcItem}</ul>
+			<legend className="text-2xl">{nameProcGroup}</legend>
+			<ul>{ProcItem}</ul>
 		</fieldset>
 	);
 
