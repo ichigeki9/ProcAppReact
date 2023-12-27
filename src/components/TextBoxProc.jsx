@@ -11,7 +11,7 @@ function TextBoxProc() {
 
     return (
         <>
-        <div className="bg-slate-300 w-screen">
+        <div className="bg-slate-300 w-screen absolute">
         <p className="ml-5 text-start text-xl">{procName}</p>
         </div>
         </>

@@ -21,7 +21,7 @@ function Header (props) {
 				<div className="space-x-20 text-2xl flex justify-center items-center mr-20  ">
 					<button className="border-2 px-7 py-2 rounded-xl hover:bg-slate-500 transition-colors" onClick={copyProc}>Kopiuj</button>
 					<button className="border-2 px-7 py-2 rounded-xl hover:bg-slate-500 transition-colors" onClick={props.resetButtonHandler}>Resetuj</button>
-					<button className="border-2 px-7 py-2 rounded-xl hover:bg-slate-500 transition-colors">Generuj Specyfikacje</button>
+					<button className="border-2 px-7 py-2 rounded-xl hover:bg-slate-500 transition-colors" onClick={props.showModal}>Generuj Specyfikacje</button>
 				</div>
 			</div>
 		</header>
